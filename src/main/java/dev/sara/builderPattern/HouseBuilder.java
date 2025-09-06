@@ -33,7 +33,13 @@ public class HouseBuilder implements IBuilder {
 
     @Override
     public HouseEntity build() {
-        return new HouseEntity(garage, pool, garden, fancyStatues);
+       HouseEntity house = new HouseEntity(garage, pool, garden, fancyStatues);
+        this.garage = false;
+        this.pool = false;
+        this.garden = false;
+        this.fancyStatues = false;
+
+        return house;
     }
 
 }

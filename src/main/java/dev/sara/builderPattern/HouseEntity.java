@@ -29,6 +29,18 @@ public class HouseEntity {
         return fancyStatues;
     }
 
-    
-    
+    /*Para poder ver las casas en consola 
+    y no salga por defecto la dirección de la memoria */
+    @Override
+    public String toString() {
+        return "House Entity{" +
+        "garage=" + garage +
+        ", garden=" + garden +
+            ", pool=" + pool +
+            ", fancyStatues=" + fancyStatues +
+            '}';
+    }
 }
+    
+
+
