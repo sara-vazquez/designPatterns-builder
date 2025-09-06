@@ -31,6 +31,7 @@ public class HouseBuilder implements IBuilder {
         return this;
     }
 
+    //Reseteamos los atributos para que no salgan en todas las casas
     @Override
     public HouseEntity build() {
        HouseEntity house = new HouseEntity(garage, pool, garden, fancyStatues);
