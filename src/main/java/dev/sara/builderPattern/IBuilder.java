@@ -5,4 +5,5 @@ public interface IBuilder {
     IBuilder buildPool();
     IBuilder buildGarden();
     IBuilder buildFancyStatues();
+    HouseEntity build();
 }
